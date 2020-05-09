@@ -2,36 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <meta charset="UTF-8" />
+  <!-- to make this responsive it will have to scale to screensize -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--  Dale Russell hwk#3 -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!--   title of project -->
+  <title>Password Generator</title>
+  <!--  these are style link style css -->
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>Password Generator</h1>
-        </header>
+  <!-- the wrapper contains the container and contents -->
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
 
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+        <div class="card-body">
+          <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password">
 
-
-        </script>
-        <div class="card">
-            <div class="card-header">
-                <h2>Generate a Password</h2>
-            </div>
-            <div class="card-body">
-                <textarea readonly id="password" placeholder="Your Secure Password"
-                    aria-label="Generated Password"></textarea>
-            </div>
-            <div class="card-footer">
-                <button id="generate" class="btn">Generate Password</button>
-            </div>
+          </textarea>
         </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
